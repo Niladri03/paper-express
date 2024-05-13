@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  margin: 0 auto;
+  padding: 15px 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 5px solid black;
+  background-color: #ebe8e8;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 7ch;
+  padding: 15px;
+  margin-bottom: 5px;
+  color: rgb(54, 5, 5);
+}
+
+h2 {
+  font-size: 4ch;
+  font-stretch: semi-expanded;
+  padding: 20px 0;
+  color: rgb(10, 10, 77);
+}
+
+#table1 tr {
+  background-color: #330606f0;
+}
+#table1 td{
+  background-color: aquamarine;
+}
+#table2 tr {
+  background-color: #1c60cef0;
+}
+#table2 td{
+  background-color: rgb(231, 131, 203);
+}
+a{
+  text-decoration: none;
+}
+#hell2 {
+  text-decoration: none;
+  padding: 15px 35px;
+  font-size: large;
+  text-emphasis-color: red;
+  border: 6px solid rgb(13, 11, 11);
+  background: rgb(210, 151, 82);
+  display: inline-block;
+}
+
+body{
+  background-image: url('images/bg_logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+}
+
+footer p {
+  text-align: center;
+  font-size: small;
+  color: aliceblue;
+}
+
+#hell{
+  float: right;
+  color: #ebe8e8;
+  background-color: rgb(212, 43, 43);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  cursor: p;
+  width: 110px;
+  font-size: 25px;
+}
+#hell:hover{
+  
+  background-color: blueviolet;
+}
+
+#hell3 {
+  text-decoration: none;
+  padding: 15px 35px;
+  font-size: xx-large;
+  text-emphasis-color: red;
+  border: 6px solid rgb(13, 11, 11);
+  background: rgb(210, 151, 82);
+  display: inline-block;
+}

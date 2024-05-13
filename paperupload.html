@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>PE New Paper Upload</title>
+    <link rel="icon" href="images/logo.jpeg">
+</head>
+
+<body>
+   <img align="left" src="images/logo.jpeg" width="100" height="100">
+   <a href="index.html">
+   <div id="hell"> &#x23FB; Logout</div></a>
+   <center>
+   <br><br>
+   <h1>NEW PAPER UPLOAD</h1>
+   <br><br><br><br>
+   
+    <article>
+      <center>
+         <form action="Usepapers" method="POST">
+            <table align="center" width="50%" height="50px" border="1" id="table1">
+               <tr bgcolor="#E4D00A">
+                  <td align="center">1.Title of paper:*</td>
+                  <td align="center"><input type="text" name="title"
+                  maxlength="40" size="50"    
+                  title="Title of the paper to be uploaded"
+                  placeholder="&#9998 Title of the paper to be uploaded" autocomplete="off" required></td>
+               </tr>
+               <tr bgcolor="#E4D00A">
+                  <td align="center">2.Paper Category:*</td>
+                  <td align="center"><select name="category" required>
+                        <option value="engineering">Engineering</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="others">Others</option>
+                        </select>
+                        <br>
+                        <input type="text"
+                  maxlength="25" size="35" 
+                  title="Category of paper to be uploaded"
+                  placeholder="&#9998 Specify if others">
+               </tr>
+               <tr bgcolor="#E4D00A">
+                  <td align="center">3.Author Name:*</td>
+                  <td align="center"><input type="text" name="author"
+                  maxlength="40" size="50" 
+                  title="Name of author"
+                  placeholder="&#9998 Name of author" autocomplete="off" required></td>
+               </tr>
+               <tr bgcolor="#E4D00A">
+                  <td align="center">4.User Name:*</td>
+                  <td align="center"><input type="text" name="user"
+                  maxlength="40" size="50" 
+                  title="Name of user"
+                  placeholder="&#9998 Name of user" autocomplete="off" required></td>
+               </tr>
+               
+
+               <tr bgcolor="#E4D00A">
+                  <td align="center">5.Pdf Upload:</td>
+                  <td align="center"><input type="file" name="paper"
+                        title="Upload paper"
+                        placeholder="&#128222 Upload the paper"> </td>
+               </tr>
+               <tr bgcolor="#E4D00A">
+                  <td colspan="2" align="center">
+                        <input type="submit" value="&#9989 Save">
+                        <input type="reset" value="&#10060 Reset"></td>
+                  
+               </tr>
+               <tr bgcolor="#E4D00A">
+                  <td colspan="2" align="center">
+                        * Mandatory field
+                     </td>
+                  </tr>
+               </table>
+            </form>
+         </center>
+      </article>
+   </body>
+   <br><br>
+<center><a href="Userdashboard.html" target="_self"><div id="hell2"> User Dashboard</div></a></center>
+   
+   <br>
+   <br><br><br><br><br><br><br>
+   <footer>
+      <p>Copyright © 2017 - 2022. All Rights Reserved|  Last Updated on - 16.12.2022| This site is best viewed in Firefox 58.0.1 or above, Google Chrome 58.0 or above, IE 8 or above.</p>
+   </footer>
+</html>

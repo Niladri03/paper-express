@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>PE Registration Form</title>
+    <link rel="icon" href="images/logo.jpeg">
+</head>
+
+<body>
+    <img align="right" src="images/logo.jpeg" width="100" 
+    height="100">
+    <br><br><br>
+    
+    <center>
+    <h1>USER REGISTRATION</h1></center>
+    <article>  
+        <center>    
+        <form action="Form" method="POST"> 
+            <table  border="2px solid black" width="50%" id="table1">
+                <br><br>
+                <tr>
+                    <td align="center">1. User Name *</td>
+                    <td align="center"><input type="text" name="User" maxlength="100" size="50" pattern="[a-zA-Z ]+"
+                        title="Enter user name less than 50 letters" placeholder="&#9786; User Name " required autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">2. Name *</td>
+                    <td align="center"><input type="text" name="Name" maxlength="50" size="50" pattern="[a-zA-Z ]+"
+                            title="Enter name" placeholder="&#9786; Name" required
+                            autocomplete="off"></td>
+                </tr>
+                <tr">
+                <td align="center">3. Email *</td>
+                <td align="center"><input type="email" name="Email" size="50" title="Verificaion will send to this Email"
+                        placeholder="&#9993 Enter Email Id" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td align="center">4. Mobile No.(10 Digits) * </td>
+                    <td align="center"><input type="text" name="mobileNo" maxlength="10"
+                            title="10 digit mobile no" placeholder="&#9742 Mobile No" required
+                            autocomplete="off"> </td>
+                </tr>
+                <tr>
+                    <td align="center">5. Address *</td>
+                    <td align="center"><textarea name="address" rows="5" cols="46" title="Address for Communication"
+                            placeholder="&#9962 User Address" autocomplete="off"></textarea> </td>
+                </tr>
+
+                <tr>
+                    <td align="center">6. Role *</td>
+                    <td align="center"><select name = "dropdown">
+                        <option value = "User">User</option>
+                        <option value="Admin">Admin</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="center">7. Status *</td>
+                    <td align="center"><select name="dropdown1">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td align="center">8. Password *</td>
+                    <td align="center"><input type="password" name="PW" maxlength="50" size="50" 
+                            title="Enter password" 
+                            placeholder="&#128273 Password" required
+                            autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td align="center">9. Re-Enter Password *</td>
+                    <td align="center"><input type="password" name="RePW" maxlength="50" size="50" 
+                            title="Re-Enter Password " placeholder="&#128273 Re-Enter Password" required
+                            autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="&#9989; Save" onclick="return checkPassword(this.form)">
+                        <input type="Reset" value="&#10060; Clear">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        * Mandatory Field
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+        
+    </center>
+   </article>
+</body>
+<script>
+    function checkPassword(form) {
+        password1 = form.PW.value;
+        password2 = form.RePW.value;
+       
+        if (password1 != password2) {
+            alert ("\nPassword did not match: Please try again...");
+            return false;
+        }
+
+        else{
+            return true;
+        }
+    }
+</script>
+<br><br>
+<center><div id="hell2"><a href="index.html" target="_self">User Login</div></div></a></center>
+
+<br><br>
+<footer>
+    <p>Copyright © 2017 - 2022. All Rights Reserved|  Last Updated on - 16.12.2022| This site is best viewed in Firefox 58.0.1 or above, Google Chrome 58.0 or above, IE 8 or above.</p>
+ </footer>
+
+</html>
